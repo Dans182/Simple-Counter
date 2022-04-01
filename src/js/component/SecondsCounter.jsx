@@ -18,9 +18,9 @@ const SecondsCounter = (props) => {
 };
 
 SecondsCounter.propTypes = {
-	icono: propTypes.string,
-	numero: propTypes.string,
-	numero2: propTypes.string,
+	icono: propTypes.object,
+	numero: propTypes.number,
+	numero2: propTypes.number,
 };
 
 export default SecondsCounter;
