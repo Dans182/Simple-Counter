@@ -8,8 +8,9 @@ const SecondsCounter = (props) => {
 			style={{ maxWidth: "10rem" }}>
 			<div className="card-body d-flex justify-content-center text-center">
 				<h1 className="card-title">
-					{props.reloj}
+					{props.icono}
 					{props.numero}
+					{props.numero2}
 				</h1>
 			</div>
 		</div>
@@ -17,8 +18,9 @@ const SecondsCounter = (props) => {
 };
 
 SecondsCounter.propTypes = {
-	reloj: propTypes.string,
+	icono: propTypes.string,
 	numero: propTypes.string,
+	numero2: propTypes.string,
 };
 
 export default SecondsCounter;
