@@ -4,12 +4,12 @@ import SecondsCounter from "../component/SecondsCounter.jsx";
 //create your first component
 const Home = () => {
 	let clock = <i className="fas fa-clock"></i>;
-	const [number, setNumber] = useState(0);
-	const [number2, setNumber2] = useState(0);
-	const [number3, setNumber3] = useState(0);
-	const [number4, setNumber4] = useState(0);
-	const [number5, setNumber5] = useState(0);
-	const [number6, setNumber6] = useState(0);
+	const [number, setNumber] = useState(9);
+	const [number2, setNumber2] = useState(9);
+	const [number3, setNumber3] = useState(9);
+	const [number4, setNumber4] = useState(9);
+	const [number5, setNumber5] = useState(8);
+	const [number6, setNumber6] = useState(8);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -19,23 +19,36 @@ const Home = () => {
 				setNumber(0);
 				setNumber2(number2 + 1);
 			}
-			if (number2 == 9) {
+			if (number2 == 9 && number == 9) {
 				setNumber2(0);
 				setNumber3(number3 + 1);
 			}
-			if (number3 == 9) {
+			if (number3 == 9 && number2 == 9 && number == 9) {
 				setNumber3(0);
 				setNumber4(number4 + 1);
 			}
-			if (number4 == 9) {
+			if (number4 == 9 && number3 == 9 && number2 == 9 && number == 9) {
 				setNumber4(0);
 				setNumber5(number5 + 1);
 			}
-			if (number5 == 9) {
+			if (
+				number5 == 9 &&
+				number4 == 9 &&
+				number3 == 9 &&
+				number2 == 9 &&
+				number == 9
+			) {
 				setNumber5(0);
 				setNumber6(number6 + 1);
 			}
-			if (number6 == 9) {
+			if (
+				number6 == 9 &&
+				number5 == 9 &&
+				number4 == 9 &&
+				number3 == 9 &&
+				number2 == 9 &&
+				number == 9
+			) {
 				setNumber6(0);
 				setNumber(0);
 			}
