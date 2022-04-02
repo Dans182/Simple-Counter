@@ -10,11 +10,6 @@ const SecondsCounter = (props) => {
 				<h1 className="card-title">
 					{props.icono}
 					{props.numero}
-					{props.numero2}
-					{props.numero3}
-					{props.numero4}
-					{props.numero5}
-					{props.numero6}
 				</h1>
 			</div>
 		</div>
@@ -24,11 +19,6 @@ const SecondsCounter = (props) => {
 SecondsCounter.propTypes = {
 	icono: propTypes.object,
 	numero: propTypes.number,
-	numero2: propTypes.number,
-	numero3: propTypes.number,
-	numero4: propTypes.number,
-	numero5: propTypes.number,
-	numero6: propTypes.number,
 };
 
 export default SecondsCounter;
