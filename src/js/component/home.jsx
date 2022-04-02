@@ -54,6 +54,17 @@ const Home = () => {
 				<SecondsCounter numero={number2} />
 				<SecondsCounter numero={number} />
 			</div>
+			<div className="row justify-content-center mt-3">
+				<button type="button" className="col-2 btn btn-success">
+					Reanudar
+				</button>
+				<button type="button" className="col-2 btn btn-danger">
+					Stop
+				</button>
+				<button type="button" className="col-2 btn btn-warning">
+					Reset
+				</button>
+			</div>
 		</div>
 	);
 };
