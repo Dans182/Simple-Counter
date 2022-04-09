@@ -4,12 +4,12 @@ import SecondsCounter from "../component/SecondsCounter.jsx";
 //create your first component
 const Home = () => {
 	let clock = <i className="fas fa-clock"></i>;
-	const [number, setNumber] = useState(9);
-	const [number2, setNumber2] = useState(9);
-	const [number3, setNumber3] = useState(9);
-	const [number4, setNumber4] = useState(9);
-	const [number5, setNumber5] = useState(8);
-	const [number6, setNumber6] = useState(8);
+	const [number, setNumber] = useState(0);
+	const [number2, setNumber2] = useState(0);
+	const [number3, setNumber3] = useState(0);
+	const [number4, setNumber4] = useState(0);
+	const [number5, setNumber5] = useState(0);
+	const [number6, setNumber6] = useState(0);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
